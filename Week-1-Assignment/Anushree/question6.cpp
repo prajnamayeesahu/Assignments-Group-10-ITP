@@ -1,19 +1,19 @@
 #include<iostream>
 using namespace std;
  void printPattern(int n) {
-    // First row: Print numbers from 1 to n
+    // First row
     for (int i = 1; i <= n; i++) {
       cout << i;
     }
     cout << endl;
     
-    // Second row: Print each number twice
+    // Second row
     for (int i = 1; i <= n; i++) {
       cout << i << i;
     }
     cout << endl;
     
-    // Third row: Print each number repeated based on its value
+    // Third row
     for (int i = 1; i <= n; i++) {
       for (int j = 1; j <= n; j++) {
           cout << i;
