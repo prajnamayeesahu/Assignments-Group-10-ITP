@@ -22,9 +22,9 @@ int main() {
     cin >> number;
 
     if (PerfectSquare(number)) {
-        cout << number << " The number is a perfect square." << endl;
+        cout <<" The number is a perfect square." << endl;
     } else {
-        cout << number << " the number is NOT a perfect square." << endl;
+        cout <<" the number is NOT a perfect square." << endl;
     }
 
     return 0;
