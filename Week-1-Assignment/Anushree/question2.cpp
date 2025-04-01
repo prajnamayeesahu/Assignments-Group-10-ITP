@@ -2,7 +2,9 @@
 using namespace std;
 int main()
 {
-  int a=5,b=6,c=7;
+  int a,b,c;
+  cout<<"Enter three sides of a triangle:-";
+  cin>> a>>b>>c;
   if(a+b>c && b+c>a && a+c>b)
   {
     cout<<"Triangle can be made \n";

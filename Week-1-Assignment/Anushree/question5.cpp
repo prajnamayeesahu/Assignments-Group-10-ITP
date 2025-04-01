@@ -1,27 +1,27 @@
 #include <iostream>
 using namespace std;
 
-bool PerfectSquare(int number) {
-    if (number < 0) {
-        return false; // Negative numbers cannot be perfect squares
+bool PerfectSquare(int num) {
+    if (num < 0) {
+        return false; 
     }
 
-    int i = 0; // Start from 0
-    while (i * i <= number) {
-        if (i * i == number) {
-            return true; // Found the perfect square
+    int i = 0; 
+    while (i * i <= num) {
+        if (i * i == num) {
+            return true; 
         }
         i++;
     }
-    return false; // Not a perfect square
+    return false; 
 }
 
 int main() {
-    int number;
+    int num;
     cout << "Enter a number: ";
-    cin >> number;
+    cin >> num;
 
-    if (PerfectSquare(number)) {
+    if (PerfectSquare(num)) {
         cout <<" The number is a perfect square." << endl;
     } else {
         cout <<" the number is NOT a perfect square." << endl;
