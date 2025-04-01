@@ -1,32 +1,17 @@
 #include<iostream>
 using namespace std;
- void printPattern(int n) {
-    // First row
-    for (int i = 1; i <= n; i++) {
-      cout << i;
+ int main(){
+    int n, i, j, k;
+    cout<<"Enter a number: ";
+    cin>>n;
+
+    for(i=1; i<=n; i++){
+        for(j=1; j<=n; j++){
+            for(k=1; k<=i; k++){
+                cout<<j;
+            }
+        } cout<<endl;
     }
-    cout << endl;
     
-    // Second row
-    for (int i = 1; i <= n; i++) {
-      cout << i << i;
-    }
-    cout << endl;
-    
-    // Third row
-    for (int i = 1; i <= n; i++) {
-      for (int j = 1; j <= n; j++) {
-          cout << i;
-      }
-    }
-    cout << endl;
+return 0;
 }
-
-int main()
-{
-    int n=3;
-    printPattern(n);
-    return 0;
-
-}
-
